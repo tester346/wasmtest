@@ -1,0 +1,13 @@
+﻿@page "/question"
+@namespace wasm.Client.Pages.Question
+
+@if (Post != null)
+{
+    <div>
+        <b>@Post.Id</b> <br />
+        <b>@Post.Title</b><br />
+        <span>@Post.Content</span><br />
+        <span>@Post.CreationDate</span>
+        <br /><br /><br />
+    </div>
+}
