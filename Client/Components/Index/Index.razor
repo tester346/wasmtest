@@ -1,12 +1,12 @@
 ﻿@page "/"
+@page "/question"
 @namespace wasm.Client.Pages.Index
 
 <div>
     <ul>
         @foreach(var post in Posts)
         {
-            <li >@post.Title created at @post.CreationDate</li>
-            <wasm.Client.Pages.Question.Question Id="@post.Id"></wasm.Client.Pages.Question.Question>
+            <li><a href="/question/@post.Id">@post.Title created at @post.CreationDate</a></li>
         }
     </ul>
 </div>

@@ -1,5 +1,8 @@
-﻿@page "/question"
+﻿@page "/question/{Id:guid}"
 @namespace wasm.Client.Pages.Question
+
+<a href="/question">Go Back &larr;--</a>
+<br />
 
 @if (Post != null)
 {
